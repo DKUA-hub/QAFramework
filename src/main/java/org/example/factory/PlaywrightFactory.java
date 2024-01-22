@@ -46,7 +46,7 @@ public class PlaywrightFactory {
 
     public Properties initProperties(){
         try {
-            FileInputStream propertyFile = new FileInputStream("./src/test/resources/config.properties");
+            FileInputStream propertyFile = new FileInputStream("./src/test/resources/config/config.properties");
             properties.load(propertyFile);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);

@@ -3,6 +3,7 @@ package org.example.base;
 import com.microsoft.playwright.Page;
 import org.example.factory.PlaywrightFactory;
 import org.example.pages.HomePage;
+import org.example.pages.LoginPage;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -12,6 +13,7 @@ public class BaseTest {
     PlaywrightFactory pf;
     Page page;
     protected HomePage homePage;
+    protected LoginPage loginPage;
     protected Properties properties;
 
     @BeforeClass
