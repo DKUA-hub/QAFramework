@@ -22,6 +22,7 @@ public class HomePage {
         return page.url();
     }
     public String doSearch(String name){
+        System.out.println("Seraching for: " + name);
         page.fill(searchField, name);
         page.click(searchButton);
         return page.textContent(resultTitle);

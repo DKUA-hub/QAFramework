@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da358d3-7f59-4259-99eb-1ce04102499c" name="Changes" comment="Added properties and constants and updated code to remove hardcoded values.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/tests/LoginPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_smoketest.xml" afterDir="false" />
+    <list default="true" id="2da358d3-7f59-4259-99eb-1ce04102499c" name="Changes" comment="Added test runner and Login page tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/listeners/AppTestReportListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/constants/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/constants/AppConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/factory/PlaywrightFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/factory/PlaywrightFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testrunners/testng_smoketest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testrunners/testng_smoketest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +55,7 @@
       <recent name="D:\java\QAFramework\src\test\resources\config" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/java/QAFramework/src/test/resources/testrunners/testng_homepage.xml">
+  <component name="RunManager" selected="TestNG.D:/java/QAFramework/src/test/resources/testrunners/testng_smoketest.xml">
     <configuration name="D:\java\QAFramework\src\test\resources\testrunners\testng_homepage.xml" type="TestNG" temporary="true">
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -87,27 +84,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/java/QAFramework/src/test/resources/testrunners/testng_smoketest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QAFramework" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="org.example.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.example.tests.HomePageTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="test-output" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testrunners/testng_smoketest.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -151,18 +131,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.D:/java/QAFramework/src/test/resources/testrunners/testng_homepage.xml" />
+      <item itemvalue="TestNG.D:/java/QAFramework/src/test/resources/testrunners/testng_smoketest.xml" />
       <item itemvalue="TestNG.LoginPageTest" />
       <item itemvalue="TestNG.LoginPageTest.testLoginProcess" />
       <item itemvalue="TestNG.D:\java\QAFramework\src\test\resources\testrunners\testng_homepage.xml" />
-      <item itemvalue="TestNG.HomePageTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/java/QAFramework/src/test/resources/testrunners/testng_smoketest.xml" />
         <item itemvalue="TestNG.D:/java/QAFramework/src/test/resources/testrunners/testng_homepage.xml" />
         <item itemvalue="TestNG.LoginPageTest" />
         <item itemvalue="TestNG.LoginPageTest.testLoginProcess" />
         <item itemvalue="TestNG.D:\java\QAFramework\src\test\resources\testrunners\testng_homepage.xml" />
-        <item itemvalue="TestNG.HomePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -191,12 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705695375062</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added test runner and Login page tests">
+      <option name="closed" value="true" />
+      <created>1705932726129</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705932726129</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Crated structure and added tests for HomePage" />
     <MESSAGE value="Added properties and constants and updated code to remove hardcoded values." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added properties and constants and updated code to remove hardcoded values." />
+    <MESSAGE value="Added test runner and Login page tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test runner and Login page tests" />
   </component>
 </project>

@@ -1,5 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="MyTestSuite">
+<suite name="MyTestSuite" thread-count="2" parallel="tests" verbose="4">
+    <listeners>
+        <listener class-name="org.example.listeners.AppTestReportListener"></listener>
+    </listeners>
     <test name="Home Page Tests">
         <classes>
             <class name="org.example.tests.HomePageTest" />
